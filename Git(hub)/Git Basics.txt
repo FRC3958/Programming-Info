@@ -1,1 +1,16 @@
-Git is a thing
+Git is a software for tracking changes in any set of files. It allows us to create versions of our code, which can be shared
+to other programmers, and used as backups to revert to if anything goes wrong. At the core of git is the repository, which 
+is where changes in the code are commited. To create a new repository, navigate to the root directory of your project in the
+command line, and type "git init" (make sure that git has been installed and added to the PATH).
+
+Once you have made and saved changes to your files, you need to make sure that they are being tracked by Git. To see what 
+files are currently tracked, type "git status" on the command line in the same directory as your repository. To add files to
+tracking, type "git add filename1 filename2 filename3...", or to add them all at once type "git add *". You can add files in 
+a subdirectory of your root folder by typing "git add subdirectory/filname" or "git add subdirectory/*". Once files have been 
+added to tracking, they do not need to be re added. 
+
+Confirm that all of your tracked files with changes and new files are ready to be commited by typing "git status". To commit 
+your changes to the repository, type "git commit -a -m "message"". Your commit message should be a short, concise description 
+of the changes made. Remember to commit regularly; commits should be made everytime a feature/fix is done, so that they are 
+organized in case you need to use them as a backup. 
+
